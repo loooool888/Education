@@ -5,12 +5,12 @@
   <title>The Education Gap: Rich vs Poor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* ===== 基本样式 ===== */
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
-      /* 默认：富有环境 = 柔和的渐变背景 */
+
       background: linear-gradient(135deg, #eef2f7, #d9e2ec, #f0f4f8);
       color: #222;
       transition: background 0.3s ease, color 0.3s ease;
@@ -61,7 +61,7 @@
       margin-right: auto;
     }
 
-    /* ===== 整体三栏布局：左时间线 / 中正文 / 右小卡片 ===== */
+
     .page-grid {
       max-width: 1200px;
       margin: 0 auto;
@@ -150,7 +150,6 @@
       margin-bottom: 6px;
     }
 
-    /* ===== 学生故事卡片 ===== */
     .story-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -165,7 +164,7 @@
       color: #6b7280;
     }
 
-    /* ===== 左边：时间线 ===== */
+
     .timeline {
       border-left: 2px solid #e5e7eb;
       padding-left: 16px;
@@ -201,7 +200,7 @@
       color: #374151;
     }
 
-    /* ===== 中间：图片左右切换 ===== */
+
     .before-after-card {
       margin-top: 4px;
     }
@@ -257,7 +256,7 @@
       margin-top: 2px;
     }
 
-    /* ===== 右边：小知识卡堆叠 ===== */
+
     .fact-wrapper-title {
       font-size: 0.9rem;
       font-weight: 600;
@@ -323,7 +322,7 @@
     .fact-card:nth-child(8) { transform: translateY(84px); z-index: 1; opacity: 0.8; }
     .fact-card:nth-child(n+9) { transform: translateY(96px); opacity: 0; }
 
-    /* ===== 右侧图片轮播区域 ===== */
+ 
     .photo-gallery {
       margin-top: 28px;
     }
@@ -393,7 +392,7 @@
       border-color: #9ca3af;
     }
 
-    /* 数据 & 反思区 */
+    
     .reflection-list {
       list-style: disc;
       padding-left: 20px;
@@ -407,9 +406,7 @@
       margin-top: 16px;
     }
 
-    /* ===== 主题切换：富有 / 贫穷 环境（完全按你给的版本） ===== */
-
-    /* 贫穷环境：旧旧、泛黄、有一点脏脏的感觉，但字还是好读 */
+   
     body.theme-poor {
       background:
         radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.35), transparent 55%),
@@ -447,7 +444,7 @@
       color: #78716c;
     }
 
-    /* 富有环境：更亮一点的渐变 + 干净卡片 */
+    
     body.theme-rich {
       background: linear-gradient(135deg, #ecfeff, #f5f5f5);
     }
@@ -463,7 +460,7 @@
   </style>
 </head>
 
-<!-- 默认先是 rich 模式 -->
+
 <body class="theme-rich">
   <header>
     <h1>The Education Gap: Rich vs Poor</h1>
@@ -475,9 +472,9 @@
     </p>
   </header>
 
-  <!-- 左时间线 / 中正文 / 右小卡片 + 照片轮播 -->
+ 
   <div class="page-grid">
-    <!-- 左：时间线 -->
+
     <aside class="sidebar-left">
       <div class="timeline">
         <div class="timeline-item">
@@ -518,9 +515,9 @@
       </div>
     </aside>
 
-    <!-- 中：正文内容 -->
+  
     <main class="content-main">
-      <!-- 背景介绍 -->
+   
       <section class="section">
         <div class="card">
           <span class="pill-title">Background</span>
@@ -545,7 +542,7 @@
         </div>
       </section>
 
-      <!-- 富校 vs 贫校 -->
+     
       <section class="section">
         <div class="card">
           <span class="pill-title">Contrast</span>
@@ -611,15 +608,14 @@
         </div>
       </section>
 
-      <!-- 图片左右切换 + 整站变不同风格 -->
+ 
       <section class="section">
         <div class="card before-after-card">
           <span class="pill-title">Visual</span>
           <h2>Two classroom images, two feelings</h2>
           <p>
             The same subject can feel very different depending on the space around you.
-            Use the switch below to move between a classroom with strong resources and
-            one with weaker resources. The style of the page will change too.
+            
           </p>
 
           <div class="ba-image-wrapper">
@@ -839,3 +835,4 @@
   </script>
 </body>
 </html>
+
